@@ -2,7 +2,7 @@ import { Box, Stack, Text, Link, Icon } from "@chakra-ui/react";
 import { RiContactsLine, RiDashboardLine, RiGitMergeLine, RiInputMethodLine } from "react-icons/ri";
 
 
-export function SideBar() {
+export function Sidebar() {
   return (
     <Box
       as="aside"
