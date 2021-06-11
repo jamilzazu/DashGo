@@ -1,5 +1,6 @@
-import { Flex, Text, Input, Icon } from '@chakra-ui/react'
-import { RiSearchLine } from 'react-icons/ri'
+import { Flex, Text, Input, Icon, HStack, Box, Avatar } from '@chakra-ui/react'
+import React from 'react'
+import { RiNotificationLine, RiSearchLine, RiUserAddLine } from 'react-icons/ri'
 
 export function Header() {
   return (
@@ -14,7 +15,6 @@ export function Header() {
       px="6"
       align="center"
     >
-
       <Text
         fontSize="3xl"
         fontWeight="bold"
@@ -30,7 +30,6 @@ export function Header() {
           .
         </Text>
       </Text>
-
       <Flex
         as="label"
         flex="1"
@@ -51,16 +50,63 @@ export function Header() {
           mr="4"
           placeholder="Buscar na plataforma"
           _placeholder={{
-            color: 'gray-400'
+            color:
+              'gray-400'
           }}
         >
         </Input>
-
         <Icon
           as={RiSearchLine}
         />
       </Flex>
+      <Flex
+        align="center"
+        ml="auto"
+      >
 
-    </Flex >
+        <HStack
+          spacing="8"
+          mx="8"
+          pr="8"
+          py="1"
+          color="gray.300"
+          borderRightWidth={1}
+          borderColor="gray.700"
+        >
+          <Icon
+            as={RiNotificationLine}
+            fontSize="20"
+          />
+          <Icon
+            as={RiUserAddLine}
+            fontSize="20"
+          />
+        </HStack>
+
+        <Flex
+          align="center"
+        >
+          <Box
+            mr="4"
+            textAlign="right"
+          >
+            <Text>
+              Jamil Zazu
+            </Text>
+            <Text
+              color="gray.300"
+              fontSize="small"
+            >
+              jamilzazu@hotmail.com
+            </Text>
+          </Box>
+
+          <Avatar
+            size="md"
+            name="Jamil Zazu"
+          />
+        </Flex>
+      </Flex>
+    </Flex>
   );
 }
