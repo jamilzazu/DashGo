@@ -13,7 +13,6 @@ import {
   Thead,
   Tr
 } from "@chakra-ui/react";
-import React from "react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 
 import { Header } from '../../components/Header'
