@@ -35,7 +35,7 @@ export default function UserList() {
 
         <Box
           flex="1"
-          borderradius="8"
+          borderradius={8}
           bg="gray.800"
           p="8"
         >
