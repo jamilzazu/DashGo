@@ -1,24 +1,14 @@
 import {
   Box,
   Button,
-  Checkbox,
   Flex,
-  Icon,
   Heading,
   HStack,
-  Table,
-  Text,
-  Tbody,
-  Td,
-  Th,
-  Thead,
-  Tr,
   Divider,
   VStack,
   SimpleGrid
 } from "@chakra-ui/react";
 import React from "react";
-import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Input } from "../../components/Form/Input";
 
 import { Header } from '../../components/Header'

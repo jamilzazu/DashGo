@@ -106,7 +106,7 @@ export default function UserList() {
                       Jamil Zazu
                     </Text>
                     <Text
-                      fontsize="sm"
+                      fontSize="sm"
                       color="gray.300"
                     >
                       jamilzazu@hotmail.com
