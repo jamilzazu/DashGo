@@ -14,6 +14,7 @@ import {
   Tr,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
 import { Header } from '../../components/Header';
@@ -38,15 +39,17 @@ export default function UserList() {
               Usuários
             </Heading>
 
-            <Button
-              as="a"
-              size="sm"
-              fontSize="sm"
-              colorScheme="pink"
-              leftIcon={<Icon as={RiAddLine} fontSize="20" />}
-            >
-              Criar novo
-            </Button>
+            <Link href="/users/create" passHref>
+              <Button
+                as="a"
+                size="sm"
+                fontSize="sm"
+                colorScheme="pink"
+                leftIcon={<Icon as={RiAddLine} fontSize="20" />}
+              >
+                Criar novo
+              </Button>
+            </Link>
           </Flex>
 
           <Table colorScheme="whiteAlpha">
@@ -75,17 +78,6 @@ export default function UserList() {
                 </Td>
 
                 {isWideVersion && <Td>04 de junho, 2021</Td>}
-                {/* <Td>
-                  <Button
-                    as="a"
-                    size="sm"
-                    fontSize="sm"
-                    colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
-                  >
-                    {isWideVersion ? 'Editar' : ''}
-                  </Button>
-                </Td> */}
               </Tr>
 
               <Tr>
@@ -103,17 +95,6 @@ export default function UserList() {
                 </Td>
 
                 {isWideVersion && <Td>04 de junho, 2021</Td>}
-                {/* <Td>
-                  <Button
-                    as="a"
-                    size="sm"
-                    fontSize="sm"
-                    colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
-                  >
-                    {isWideVersion ? 'Editar' : ''}
-                  </Button>
-                </Td> */}
               </Tr>
 
               <Tr>
@@ -131,17 +112,6 @@ export default function UserList() {
                 </Td>
 
                 {isWideVersion && <Td>04 de junho, 2021</Td>}
-                {/* <Td>
-                  <Button
-                    as="a"
-                    size="sm"
-                    fontSize="sm"
-                    colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
-                  >
-                    {isWideVersion ? 'Editar' : ''}
-                  </Button>
-                </Td> */}
               </Tr>
             </Tbody>
           </Table>
