@@ -21,7 +21,7 @@ import { RiAddLine } from 'react-icons/ri';
 import { Header } from '../../components/Header';
 import { Pagination } from '../../components/Pagination';
 import { Sidebar } from '../../components/Sidebar';
-import { useUsers } from '../../services/hooks/Users/useUsers';
+import { useUsers } from '../../services/hooks/users/useUsers';
 
 export default function UserList() {
   const { data, isLoading, isFetching, error } = useUsers();
